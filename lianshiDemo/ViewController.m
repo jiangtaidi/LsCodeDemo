@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "AXExtentString.h"
+#import "NSObject+ExtentString.h"
 
 @interface ViewController ()
 
@@ -14,14 +16,27 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    AXExtentString *string =[[AXExtentString alloc] init];
+    string.addStr(@"have ").addStr(@"a ").addStr(@"test").addStr(@"!");
+    NSLog(@"string:%@",[string string]);
+    
+    NSString *str = [NSObject makerString:^(AXExtentString *str) {
+        str.addStr(@"have ").addStr(@"a ").addStr(@"test").addStr(@"!");
+    }];
+    NSLog(@"str:%@",str);
 }
 
 @end
+
+
+
+
+
+
+
+
+
+

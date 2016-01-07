@@ -10,4 +10,11 @@
 
 @implementation NSObject (ExtentString)
 
++(NSString*)makerString:(void(^)(AXExtentString * str))block
+{
+    AXExtentString *str = [[AXExtentString alloc] init];
+    block(str);
+    return [str string];
+}
+
 @end

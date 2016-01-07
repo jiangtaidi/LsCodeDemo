@@ -15,6 +15,8 @@
 		08E2E2DD1C3EB75700B640C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E2E2DB1C3EB75700B640C3 /* LaunchScreen.storyboard */; };
 		08E2E2E81C3EB75700B640C3 /* lianshiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E2E2E71C3EB75700B640C3 /* lianshiDemoTests.m */; };
 		08E2E2F31C3EB75700B640C3 /* lianshiDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E2E2F21C3EB75700B640C3 /* lianshiDemoUITests.m */; };
+		08E2E3021C3EB9C400B640C3 /* AXExtentString.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E2E3011C3EB9C400B640C3 /* AXExtentString.m */; };
+		08E2E3051C3EBC3100B640C3 /* NSObject+ExtentString.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E2E3041C3EBC3100B640C3 /* NSObject+ExtentString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		08E2E2EE1C3EB75700B640C3 /* lianshiDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lianshiDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E2E2F21C3EB75700B640C3 /* lianshiDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lianshiDemoUITests.m; sourceTree = "<group>"; };
 		08E2E2F41C3EB75700B640C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E2E3001C3EB9C400B640C3 /* AXExtentString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXExtentString.h; sourceTree = "<group>"; };
+		08E2E3011C3EB9C400B640C3 /* AXExtentString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXExtentString.m; sourceTree = "<group>"; };
+		08E2E3031C3EBC3100B640C3 /* NSObject+ExtentString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ExtentString.h"; sourceTree = "<group>"; };
+		08E2E3041C3EBC3100B640C3 /* NSObject+ExtentString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ExtentString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 		08E2E2CC1C3EB75600B640C3 /* lianshiDemo */ = {
 			isa = PBXGroup;
 			children = (
+				08E2E3031C3EBC3100B640C3 /* NSObject+ExtentString.h */,
+				08E2E3041C3EBC3100B640C3 /* NSObject+ExtentString.m */,
+				08E2E3001C3EB9C400B640C3 /* AXExtentString.h */,
+				08E2E3011C3EB9C400B640C3 /* AXExtentString.m */,
 				08E2E2D01C3EB75600B640C3 /* AppDelegate.h */,
 				08E2E2D11C3EB75600B640C3 /* AppDelegate.m */,
 				08E2E2D31C3EB75600B640C3 /* ViewController.h */,
@@ -271,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E2E2D51C3EB75600B640C3 /* ViewController.m in Sources */,
+				08E2E3051C3EBC3100B640C3 /* NSObject+ExtentString.m in Sources */,
 				08E2E2D21C3EB75600B640C3 /* AppDelegate.m in Sources */,
 				08E2E2CF1C3EB75600B640C3 /* main.m in Sources */,
+				08E2E3021C3EB9C400B640C3 /* AXExtentString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

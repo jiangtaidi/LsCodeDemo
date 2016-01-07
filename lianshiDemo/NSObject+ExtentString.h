@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AXExtentString.h"
 
 @interface NSObject (ExtentString)
+
++(NSString*)makerString:(void(^)(AXExtentString * str))block;
 
 @end

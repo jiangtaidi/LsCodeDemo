@@ -10,4 +10,7 @@
 
 @interface AXExtentString : NSObject
 
+-(AXExtentString *(^)(NSString *str))addStr;
+-(NSString*)string;
+
 @end
